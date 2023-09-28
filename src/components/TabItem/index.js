@@ -2,21 +2,16 @@
 import './index.css'
 
 const TabItem = props => {
-  const {tabDetails, setActiveTabId, isActive} = props
+  const {tabDetails, updateTabId, isActive} = props
   const {tabId, displayText} = tabDetails
-  const onClickTab = () => {
-    setActiveTabId(tabId)
+  const onClickButton = () => {
+    updateTabId(tabId)
   }
 
-  const activeTabBtnClassName = isActive ? 'tab-button active' : 'tab-button'
-
+  const tabBtnClassName = isActive ? 'tab-button active' : 'tab-button'
   return (
-    <li className="tab-item">
-      <button
-        type="button"
-        className={activeTabBtnClassName}
-        onClick={onClickTab}
-      >
+    <li className="tab-item-container">
+      <button className={tabBtnClassName} type="button" onClick={onClickButton}>
         {displayText}
       </button>
     </li>

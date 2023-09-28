@@ -1,40 +1,49 @@
 /* Write your CSS here */
-.app-item {
+.app-item-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style-type: none;
   background-color: #ffffff;
-  padding-top: 16px;
-  padding-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
   border-radius: 12px;
+  padding-top: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
   width: 45%;
-  max-width: 125px;
+  max-width: 128px;
 }
-.img {
-  height: 70px;
-  width: 70px;
-}
-.paragraph {
-  color: #1e293b;
-  font-size: 16px;
-  font-family: 'Bree Serif';
-}
+
 @media screen and (min-width: 768px) {
-  .app-item {
-    max-width: 175px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
+  .app-item-container {
+    max-width: 198px;
     padding-top: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
   }
-  .img {
-    height: 100px;
-    width: 100px;
+}
+
+.app-logo {
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-logo {
+    width: 102px;
+    height: 102px;
   }
-  .paragraph {
+}
+
+.app-name {
+  color: #1e293b;
+  font-family: 'Bree serif';
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-name {
+    font-family: 'Bree Serif';
     font-size: 24px;
   }
 }

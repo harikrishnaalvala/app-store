@@ -1,12 +1,13 @@
 /* Write your CSS here */
-.tab-item {
+.tab-item-container {
   list-style-type: none;
 }
+
 .tab-button {
   color: #7b8794;
   font-family: 'Roboto';
+  font-size: 14px;
   font-weight: 500;
-  font-size: 16px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -18,11 +19,7 @@
   outline: none;
   cursor: pointer;
 }
-.active {
-  color: #2563eb;
-  padding-bottom: 8px;
-  border: 2px solid #2563eb;
-}
+
 @media screen and (min-width: 768px) {
   .tab-button {
     font-size: 16px;
@@ -30,6 +27,15 @@
     padding-right: 26px;
     padding-bottom: 8px;
   }
+}
+
+.active {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
   .active {
     padding-bottom: 12px;
   }
